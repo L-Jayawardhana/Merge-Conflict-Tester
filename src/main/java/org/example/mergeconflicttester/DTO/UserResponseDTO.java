@@ -1,12 +1,24 @@
 package org.example.mergeconflicttester.DTO;
 
+import org.example.mergeconflicttester.Model.User;
+
 public class UserResponseDTO {
     private Long userId;
     private String username;
+    private String email;
+    private String role;
 
-    public UserResponseDTO() {
+    // Constructors
+    public UserResponseDTO() {}
+
+    public UserResponseDTO(Long userId, String username, String email, String role) {
+        this.userId = userId;
+        this.username = username;
+        this.email = email;
+        this.role = role;
     }
 
+    // Getters and Setters
     public Long getUserId() {
         return userId;
     }
@@ -21,5 +33,21 @@ public class UserResponseDTO {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }
