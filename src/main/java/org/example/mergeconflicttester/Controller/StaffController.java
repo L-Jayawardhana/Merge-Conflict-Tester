@@ -1,6 +1,5 @@
 package org.example.mergeconflicttester.Controller;
 
-import org.example.mergeconflicttester.DTO.CreateStaffDTO;
 import org.example.mergeconflicttester.DTO.StaffResponseDTO;
 import org.example.mergeconflicttester.Service.StaffService;
 import org.springframework.beans.factory.annotation.Autowired;

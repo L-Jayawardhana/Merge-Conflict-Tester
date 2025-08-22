@@ -1,17 +1,15 @@
 package org.example.mergeconflicttester.DTO;
 
-import org.example.mergeconflicttester.Model.User;
-
-public class CreateUserDTO {
+public class UserCreateDTO {
     private String username;
     private String password;
     private String email;
     private String role;
 
     // Constructors
-    public CreateUserDTO() {}
+    public UserCreateDTO() {}
 
-    public CreateUserDTO(String username, String password, String email, String role) {
+    public UserCreateDTO(String username, String password, String email, String role) {
         this.username = username;
         this.password = password;
         this.email = email;

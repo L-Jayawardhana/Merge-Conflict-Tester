@@ -1,5 +1,5 @@
 package org.example.mergeconflicttester.DTO;
 
-public class CreateStaffDTO {
+public class StaffCreateDTO {
 
 }

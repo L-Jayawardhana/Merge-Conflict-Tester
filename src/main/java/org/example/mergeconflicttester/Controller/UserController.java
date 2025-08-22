@@ -1,6 +1,6 @@
 package org.example.mergeconflicttester.Controller;
 
-import org.example.mergeconflicttester.DTO.CreateUserDTO;
+import org.example.mergeconflicttester.DTO.UserCreateDTO;
 import org.example.mergeconflicttester.DTO.UserResponseDTO;
 import org.example.mergeconflicttester.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ public class UserController {
     UserService userService;
 
     @PostMapping
-    public ResponseEntity<UserResponseDTO> addUser(@RequestBody CreateUserDTO createUserDTO) {
+    public ResponseEntity<UserResponseDTO> addUser(@RequestBody UserCreateDTO createUserDTO) {
         UserResponseDTO response = userService.addUser(createUserDTO);
         return ResponseEntity.status(201).body(response);
     }

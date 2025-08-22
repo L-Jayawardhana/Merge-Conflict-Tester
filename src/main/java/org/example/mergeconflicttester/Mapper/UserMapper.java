@@ -1,6 +1,6 @@
 package org.example.mergeconflicttester.Mapper;
 
-import org.example.mergeconflicttester.DTO.CreateUserDTO;
+import org.example.mergeconflicttester.DTO.UserCreateDTO;
 import org.example.mergeconflicttester.DTO.UserResponseDTO;
 import org.example.mergeconflicttester.Model.User;
 import org.springframework.stereotype.Component;
@@ -13,7 +13,7 @@ public class UserMapper {
      * @param createUserDTO the DTO containing user creation data
      * @return User entity
      */
-    public User toEntity(CreateUserDTO createUserDTO) {
+    public User toEntity(UserCreateDTO createUserDTO) {
         if (createUserDTO == null) {
             return null;
         }

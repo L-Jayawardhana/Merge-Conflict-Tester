@@ -1,6 +1,6 @@
 package org.example.mergeconflicttester.Service;
 
-import org.example.mergeconflicttester.DTO.CreateUserDTO;
+import org.example.mergeconflicttester.DTO.UserCreateDTO;
 import org.example.mergeconflicttester.DTO.UserResponseDTO;
 import org.example.mergeconflicttester.Mapper.UserMapper;
 import org.example.mergeconflicttester.Model.User;
@@ -25,7 +25,7 @@ public class UserService {
     }
 
     @Transactional
-    public UserResponseDTO addUser(CreateUserDTO createUserDTO) {
+    public UserResponseDTO addUser(UserCreateDTO createUserDTO) {
         // Create and save user first
         User user = userMapper.toEntity(createUserDTO);
         User savedUser = userRepo.save(user);
